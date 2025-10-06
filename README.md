@@ -5,7 +5,7 @@ The analysis follows a complete quantitative research workflow: **data collectio
 
 ---
 
-#Project Overview
+## Project Overview
 
 Momentum is one of the most persistent and well-documented factors in finance.  
 This project builds a **12–1 momentum model**, where assets are ranked by their cumulative returns over the previous 12 months (excluding the most recent month).  
@@ -19,7 +19,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-#Notebooks
+## Notebooks
 
 | Notebook | Description |
 |-----------|--------------|
@@ -30,7 +30,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-#Key Results
+## Key Results
 
 | Strategy | CAGR | Ann. Vol | Sharpe | Sortino | Max DD | Calmar |
 |-----------|------|-----------|---------|----------|----------|----------|
@@ -47,7 +47,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-#Visual Insights
+## Visual Insights
 
 The project includes professional visualizations for interpretability:
 
@@ -60,7 +60,7 @@ The project includes professional visualizations for interpretability:
 
 ---
 
-#Methodology
+## Methodology
 
 1. **Data Source:** Yahoo Finance (`yfinance` API)  
 2. **Frequency:** Monthly (EOM resampling of daily adjusted close prices)  
@@ -83,22 +83,56 @@ The project includes professional visualizations for interpretability:
 
 ---
 
-#Performance Metrics
 
-All metrics are implemented directly in Python:
+## Performance Metrics
 
-| Function | Formula |
-|-----------|----------|
-| **CAGR** | \( (1 + R_\text{total})^{1/T} - 1 \) |
-| **Annual Volatility** | \( \sigma_\text{monthly} \times \sqrt{12} \) |
-| **Sharpe Ratio** | \( \frac{\bar{r}}{\sigma} \sqrt{12} \) |
-| **Sortino Ratio** | \( \frac{\bar{r}}{\sigma_\text{downside}} \sqrt{12} \) |
-| **Max Drawdown** | Minimum of cumulative return / peak − 1 |
-| **Calmar Ratio** | \( \frac{\text{CAGR}}{|\text{Max DD}|} \) |
+All metrics are implemented directly in Python to evaluate portfolio performance and risk.
+
+
+### **CAGR – Compound Annual Growth Rate**
+Measures the annualized rate of return of the portfolio over the entire backtest period.
+
+$(1 + R_{total})^{1/T} - 1$
+
+<br>
+
+### **Annual Volatility**
+Represents the annualized standard deviation of monthly returns.
+
+$\sigma_{monthly} \times \sqrt{12}$
+
+<br>
+
+### **Sharpe Ratio**
+Indicates the excess return earned per unit of total risk (volatility).
+
+$\frac{\bar{r}}{\sigma} \times \sqrt{12}$
+
+<br>
+
+### **Sortino Ratio**
+Similar to the Sharpe Ratio, but penalizes only downside volatility (negative returns).
+
+$\frac{\bar{r}}{\sigma_{downside}} \times \sqrt{12}$
+
+<br>
+
+### **Max Drawdown**
+Represents the largest historical decline from a peak in the cumulative return curve.
+
+$\min_t \left( \frac{\text{Cumulative Return}_t}{\text{Peak}_t} - 1 \right)$
+
+<br>
+
+### **Calmar Ratio**
+Compares the compound annual return to the maximum drawdown, measuring risk-adjusted efficiency.
+
+$\frac{\text{CAGR}}{|\text{Max DD}|}$
+
 
 ---
 
-#Technologies used
+## Technologies used
 
 - **Language:** Python 3.11+  
 - **Core Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `yfinance`, `scipy`  
@@ -106,7 +140,7 @@ All metrics are implemented directly in Python:
 
 ---
 
-#Author
+## Author
 
 **Ignacio Pinazo Orihuela**  
 *Computer Engineering Student* — Universitat Politècnica de València    
