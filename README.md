@@ -5,7 +5,7 @@ The analysis follows a complete quantitative research workflow: **data collectio
 
 ---
 
-##Project Overview
+#Project Overview
 
 Momentum is one of the most persistent and well-documented factors in finance.  
 This project builds a **12–1 momentum model**, where assets are ranked by their cumulative returns over the previous 12 months (excluding the most recent month).  
@@ -19,7 +19,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-##Notebooks
+#Notebooks
 
 | Notebook | Description |
 |-----------|--------------|
@@ -30,7 +30,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-##Key Results
+#Key Results
 
 | Strategy | CAGR | Ann. Vol | Sharpe | Sortino | Max DD | Calmar |
 |-----------|------|-----------|---------|----------|----------|----------|
@@ -47,7 +47,7 @@ All results are benchmarked against the **SPY**, representing the U.S. equity ma
 
 ---
 
-##Visual Insights
+#Visual Insights
 
 The project includes professional visualizations for interpretability:
 
@@ -60,7 +60,7 @@ The project includes professional visualizations for interpretability:
 
 ---
 
-##Methodology
+#Methodology
 
 1. **Data Source:** Yahoo Finance (`yfinance` API)  
 2. **Frequency:** Monthly (EOM resampling of daily adjusted close prices)  
@@ -83,7 +83,7 @@ The project includes professional visualizations for interpretability:
 
 ---
 
-##Performance Metrics
+#Performance Metrics
 
 All metrics are implemented directly in Python:
 
@@ -98,7 +98,7 @@ All metrics are implemented directly in Python:
 
 ---
 
-##Technologies used
+#Technologies used
 
 - **Language:** Python 3.11+  
 - **Core Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `yfinance`, `scipy`  
@@ -106,7 +106,7 @@ All metrics are implemented directly in Python:
 
 ---
 
-##Author
+#Author
 
 **Ignacio Pinazo Orihuela**  
 *Computer Engineering Student* — Universitat Politècnica de València    
